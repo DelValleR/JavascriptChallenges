@@ -4,7 +4,8 @@
 // Return false otherwise
 
 function myFunction(a, b) {
-  return console.log(!!a[b]);
+  return !!a[b];
+  // return Boolean(a[b]) es otra forma de solucionarlo
 }
 myFunction({ a: 1, b: 2, c: 3 }, 'b'); //true
 myFunction({ x: 'a', y: null, z: 'c' }, 'y'); //false
